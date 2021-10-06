@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !soldancarpiyor)
             {
                 rg.velocity = new Vector2(-hiz,rg.velocity.y);
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+                transform.rotation = Quaternion.Euler(0, 180, 0);
         }
             else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow) && !sagdancarpiyor)
             {
@@ -60,17 +60,6 @@ public class Player : MonoBehaviour
     }
     void durumyoneticisi()
     {
-<<<<<<< HEAD
-=======
-        if (Input.GetAxisRaw("Horizontal") == -1)
-        {
-            transform.rotation = Quaternion.Euler(0,180,0);
-        }
-        if (Input.GetAxisRaw("Horizontal") == 1)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
->>>>>>> parent of d5af83b (1.5)
         if (Input.GetAxisRaw("Horizontal") == 0 && yerdemibool)
         {
             animasyoncu.SetBool("Ground", true);
